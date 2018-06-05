@@ -1,0 +1,8 @@
+gcc on Linux:
+
+$ g++ -shared -fpic l.cpp -o l.so
+$ g++ m.cpp l.so -Wl,-rpath,. -o m.out
+$ ./m.out 
+Hello,world!
+$
+
